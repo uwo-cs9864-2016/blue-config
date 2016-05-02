@@ -1,0 +1,27 @@
+{
+  "name": "blue-config",
+  "version": "0.0.1",
+  "description": "Allows for loading Bluemix and Local configurations side-by-side",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwo-cs9864-2016/blue-config.git"
+  },
+  "keywords": [
+    "bluemix",
+    "cfenv"
+  ],
+  "author": {
+    "name": "Kevin Brightwell",
+    "url": "https://github.com/Nava2"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uwo-cs9864-2016/blue-config/issues"
+  },
+  "homepage": "https://github.com/uwo-cs9864-2016/blue-config#readme",
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "lodash": "^4.11.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "vcap": {
+
+    "services": {
+      "stock-server": [
+        {
+          "name": "stock-server",
+          "label": "stock-server",
+          "credentials": {
+            "host": "my-stock-server.example.com",
+            "port": 80,
+            "url": "http://my-stock-server.example.com"
+          }
+        }
+      ]
+    }
+  },
+
+
+  "locals": {
+    "local": {
+      "client": {
+        "pathname": "/client"
+      }
+    }
+  }
+}
