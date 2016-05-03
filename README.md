@@ -8,8 +8,8 @@ The configuration JSON file is parsed. The `locals` property is loaded into the 
 
 ```js
 // load a configuration and pass a folder where `config.bluemix.json` and `config.local.json` 
-// lives. If unspecified, the path defaults to `./`.
-const cfg = require('blue-config')('./config');
+// lives. Must be specified
+const cfg = require('blue-config')(__dirname + '/config');
 
 const util = require('util');
 

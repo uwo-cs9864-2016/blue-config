@@ -1,13 +1,16 @@
 'use strict';
 
+const assert = require('assert');
+const fs = require('fs');
+
 const cfenv = require('cfenv');
 const _ = require('lodash');
 
 module.exports = function Config(path) {
 
-  if (!_.isString(path)) {
-    path = '.';
-  }
+  assert(_.isString(path), "Must specify path that exists.");
+  
+  fs.accessSync(path, fs.R_OK);
 
   let vcap;
   let config;
