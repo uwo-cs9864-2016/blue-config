@@ -39,7 +39,7 @@ module.exports = function Config(pathname) {
     vcap = cfenv.getAppEnv(ext);
   }
 
-  if (_.has(vcap, "locals")) {
+  if (_.has(config, "locals")) {
     vcap.locals = config.locals;
   } else {
     vcap.locals = {};
